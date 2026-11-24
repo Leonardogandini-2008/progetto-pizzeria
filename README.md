@@ -22,10 +22,10 @@ Il progetto è stato svolto in coppia: le tre sezioni Pizze, Dolci e Bibite sono
 
 Il progetto è stato realizzato da due persone:
 
-- **Persona 1 – Coordinamento:** preparazione del repository, organizzazione del lavoro, controllo delle modifiche e integrazione in `main`.
-- **Persona 2 – Sviluppo:** realizzazione e aggiornamento dei contenuti del sito, con lavoro su branch dedicati e invio delle modifiche tramite Pull Request.
+- **Partecipante 1:** collabora alla progettazione, alla realizzazione e alla gestione del repository.
+- **Partecipante 2:** collabora alla progettazione, alla realizzazione e alla gestione del repository.
 
-Le sezioni Pizze, Dolci e Bibite sono state suddivise come parti funzionali del progetto e gestite dai due partecipanti; non rappresentano tre sviluppatori separati.
+Le attività e le modifiche sono state svolte in coppia. Le sezioni Pizze, Dolci e Bibite sono parti funzionali del sito, non ruoli assegnati a tre sviluppatori distinti.
 
 Branch creati durante il lavoro:
 - `menuPizza`, `menuDolci`, `menuBibite`: prima tornata di modifiche.
