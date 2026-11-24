@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Pizza Diavola</title>
+  <desc id="desc">Pizza illustrata con pomodoro, mozzarella, salame piccante e peperoncino.</desc>
+  <rect width="320" height="220" rx="14" fill="#f4eadb"/>
+  <circle cx="160" cy="110" r="86" fill="#c88a45"/>
+  <circle cx="160" cy="110" r="76" fill="#f2d5a0"/>
+  <circle cx="160" cy="110" r="66" fill="#bf4636"/>
+  <g fill="#f7e8c7">
+    <circle cx="126" cy="75" r="10"/><circle cx="180" cy="72" r="10"/>
+    <circle cx="151" cy="119" r="11"/><circle cx="198" cy="132" r="10"/>
+    <circle cx="112" cy="139" r="9"/><circle cx="167" cy="163" r="9"/>
+  </g>
+  <g fill="#9d2927" stroke="#681d1b" stroke-width="2">
+    <circle cx="145" cy="91" r="10"/><circle cx="207" cy="101" r="10"/>
+    <circle cx="121" cy="111" r="10"/><circle cx="177" cy="143" r="10"/>
+    <circle cx="145" cy="155" r="9"/><circle cx="188" cy="82" r="8"/>
+  </g>
+  <g fill="#4f6540">
+    <ellipse cx="162" cy="91" rx="4" ry="10" transform="rotate(32 162 91)"/>
+    <ellipse cx="102" cy="116" rx="4" ry="10" transform="rotate(-20 102 116)"/>
+    <ellipse cx="188" cy="169" rx="4" ry="10" transform="rotate(38 188 169)"/>
+  </g>
+  <g fill="#d25a2e">
+    <path d="M225 42 Q240 49 239 61 Q228 57 225 42Z"/>
+    <path d="M83 166 Q97 167 100 179 Q87 180 83 166Z"/>
+  </g>
+</svg>
