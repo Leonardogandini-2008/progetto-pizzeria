@@ -1,6 +1,8 @@
 # Progetto pizzeria – esercitazione GitHub Flow
 
-Sito didattico HTML/CSS della pizzeria **Bella Napoli**, realizzato per l'esercitazione sullo sviluppo collaborativo con Git e GitHub.
+Sito didattico HTML/CSS della pizzeria **Bella Napoli**, realizzato da **due persone** per l'esercitazione sullo sviluppo collaborativo con Git e GitHub.
+
+Il progetto è stato svolto in coppia: le tre sezioni Pizze, Dolci e Bibite sono aree funzionali del sito, non tre sviluppatori distinti.
 
 ## File del progetto
 
@@ -16,14 +18,14 @@ Sito didattico HTML/CSS della pizzeria **Bella Napoli**, realizzato per l'eserci
 
 **Bibite:** Acqua, Cola classica (con indicazione della variante senza zucchero), Succo di frutta, Limonata.
 
-## Organizzazione del lavoro
+## Organizzazione del lavoro in coppia
 
-Il flusso riproduce il gruppo di quattro persone descritto nell'esercitazione:
+Il progetto è stato realizzato da due persone:
 
-- **Project Manager:** prepara il repository, coordina le sezioni, controlla le Pull Request e integra il lavoro.
-- **Sviluppatore A:** sezione Pizze.
-- **Sviluppatore B:** sezione Dolci.
-- **Sviluppatore C:** sezione Bibite.
+- **Persona 1 – Coordinamento:** preparazione del repository, organizzazione del lavoro, controllo delle modifiche e integrazione in `main`.
+- **Persona 2 – Sviluppo:** realizzazione e aggiornamento dei contenuti del sito, con lavoro su branch dedicati e invio delle modifiche tramite Pull Request.
+
+Le sezioni Pizze, Dolci e Bibite sono state suddivise come parti funzionali del progetto e gestite dai due partecipanti; non rappresentano tre sviluppatori separati.
 
 Branch creati durante il lavoro:
 - `menuPizza`, `menuDolci`, `menuBibite`: prima tornata di modifiche.
