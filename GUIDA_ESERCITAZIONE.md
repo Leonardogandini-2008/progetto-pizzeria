@@ -6,7 +6,7 @@ Repository remoto: https://github.com/Leonardogandini-2008/progetto-pizzeria
 
 ## 1. Ruoli del gruppo
 
-Il gruppo è composto da quattro persone:
+Il gruppo è composto da due persone:
 
 - **Project Manager (PM):** crea il repository, prepara il file iniziale, invita i collaboratori, controlla le Pull Request e integra le modifiche.
 - **Sviluppatore A:** realizza la sezione Pizze.
