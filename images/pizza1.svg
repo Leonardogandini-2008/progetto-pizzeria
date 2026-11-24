@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Pizza Diavola</title>
+  <desc id="desc">Illustrazione stilizzata di una pizza.</desc>
+  <rect width="320" height="220" rx="14" fill="#f4eadb"/>
+  <circle cx="160" cy="110" r="82" fill="#c98c4b"/>
+  <circle cx="160" cy="110" r="72" fill="#f3d8a5"/>
+  <circle cx="160" cy="110" r="62" fill="#c84c37"/>
+  <g fill="#f5e6c8">
+    <circle cx="128" cy="78" r="9"/><circle cx="184" cy="80" r="9"/>
+    <circle cx="148" cy="129" r="10"/><circle cx="196" cy="137" r="9"/>
+  </g>
+  <g fill="#596445">
+    <ellipse cx="162" cy="91" rx="5" ry="11" transform="rotate(32 162 91)"/>
+    <ellipse cx="111" cy="119" rx="5" ry="11" transform="rotate(-20 111 119)"/>
+    <ellipse cx="181" cy="157" rx="5" ry="11" transform="rotate(38 181 157)"/>
+  </g>
+</svg>
