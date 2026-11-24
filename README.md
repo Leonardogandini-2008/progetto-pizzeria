@@ -1,42 +1,56 @@
 # Progetto pizzeria – esercitazione GitHub Flow
 
-Piccolo sito web HTML/CSS della pizzeria didattica **Bella Napoli**, realizzato per simulare lo sviluppo collaborativo descritto nell'esercitazione del libro.
+Sito didattico HTML/CSS della pizzeria **Bella Napoli**, realizzato per l'esercitazione sullo sviluppo collaborativo con Git e GitHub.
 
-## Contenuto del progetto
+## File del progetto
 
-- `index.html`: struttura e contenuto del sito, con le sezioni Pizze, Dolci e Bibite.
+- `index.html`: struttura e contenuto del sito, organizzato in Pizze, Dolci e Bibite.
 - `style.css`: grafica responsive per computer, tablet e smartphone.
+- `images/pizza1.svg`: illustrazione della pizza Diavola.
 
-## Lavoro collaborativo: branch
+## Menu presente in `main`
 
-Il lavoro è stato suddiviso in tre branch descrittivi, creati a partire da `main`:
+**Pizze:** Margherita, Marinara, Quattro formaggi, Diavola.
 
-- `menuPizza`: aggiunta la pizza **Quattro formaggi**.
-- `menuDolci`: aggiunta la **Crostata**.
-- `menuBibite`: aggiunto il **Succo di frutta**.
+**Dolci:** Tiramisù, Crostata, Panna cotta.
 
-## Pull Request e integrazione
+**Bibite:** Acqua, Cola classica (con indicazione della variante senza zucchero), Succo di frutta, Limonata.
 
-Ogni sviluppatore ha pubblicato la propria modifica sul branch dedicato e ha aperto una Pull Request verso `main`. Le tre richieste sono state integrate:
+## Organizzazione del lavoro
 
-- [PR #1 – Aggiunge una nuova pizza al menu](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/1)
-- [PR #2 – Aggiunge un nuovo dolce al menu](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/2)
-- [PR #3 – Aggiunge una nuova bibita al menu](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/3)
+Il flusso riproduce il gruppo di quattro persone descritto nell'esercitazione:
 
-## Flusso di lavoro utilizzato
+- **Project Manager:** prepara il repository, coordina le sezioni, controlla le Pull Request e integra il lavoro.
+- **Sviluppatore A:** sezione Pizze.
+- **Sviluppatore B:** sezione Dolci.
+- **Sviluppatore C:** sezione Bibite.
 
-1. Creazione del repository remoto su GitHub.
-2. Preparazione dei file iniziali del sito.
-3. Creazione di un branch per ogni sezione del menu.
-4. Modifica del file `index.html` e registrazione delle modifiche con commit.
-5. Pubblicazione del branch su GitHub.
-6. Apertura di una Pull Request verso `main`.
-7. Controllo e integrazione della modifica tramite merge.
+Branch creati durante il lavoro:
+- `menuPizza`, `menuDolci`, `menuBibite`: prima tornata di modifiche.
+- `menuPizza-secondo-item`, `menuDolci-secondo-item`, `menuBibite-secondo-item`: seconda tornata.
+- `conflitto-cola-classica`, `conflitto-cola-zero`: prova di modifiche concorrenti sulla stessa riga.
+
+## Pull Request integrate
+
+- [PR #1 – nuova pizza](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/1)
+- [PR #2 – nuovo dolce](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/2)
+- [PR #3 – nuova bibita](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/3)
+- [PR #4 – seconda pizza e immagine corretta dopo commento di revisione](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/4)
+- [PR #5 – Panna cotta](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/5)
+- [PR #6 – Limonata](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/6)
+- [PR #7 – modifica concorrente della descrizione Cola classica](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/7)
+- [PR #8 – risoluzione della modifica concorrente con variante senza zucchero](https://github.com/Leonardogandini-2008/progetto-pizzeria/pull/8)
+
+Tutte le otto Pull Request risultano integrate in `main`.
+
+## Procedura completa
+
+Il file [GUIDA_ESERCITAZIONE.md](GUIDA_ESERCITAZIONE.md) contiene i passaggi per il Project Manager e i tre sviluppatori, i comandi Git per clone/branch/commit/push/pull e la procedura per gestire un conflitto.
 
 ## Come visualizzare il sito
 
-Apri il file `index.html` nel browser. Il sito utilizza il foglio di stile `style.css` presente nella stessa cartella.
+Aprire `index.html` nel browser. I file HTML, CSS e SVG sono già nel repository.
 
 ## Nota
 
-Progetto didattico: non contiene sistemi reali di ordinazione o pagamento.
+Progetto didattico: non contiene sistemi reali di prenotazione, ordinazione o pagamento.
