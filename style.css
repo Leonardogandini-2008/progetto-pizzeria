@@ -120,3 +120,13 @@ h3 { margin: 0; font-size: 1.35rem; font-weight: 600; }
   .menu-grid { grid-template-columns: 1fr; }
   .footer { align-items: flex-start; flex-direction: column; }
 }
+
+.menu-image {
+  display: block;
+  width: 100%;
+  max-height: 190px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  background: var(--cream);
+}
