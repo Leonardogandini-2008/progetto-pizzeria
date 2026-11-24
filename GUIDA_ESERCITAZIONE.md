@@ -1,6 +1,6 @@
 # Guida completa – esercitazione GitHub Flow
 
-Questa guida riassume il flusso del Project Manager e dei tre sviluppatori e contiene i comandi da eseguire nei rispettivi computer.
+Questa guida descrive il progetto realizzato da **due persone** e contiene i passaggi di collaborazione GitHub Flow. Le tre sezioni del sito (Pizze, Dolci e Bibite) sono aree funzionali del progetto, non tre ruoli di sviluppatore distinti.
 
 Repository remoto: https://github.com/Leonardogandini-2008/progetto-pizzeria
 
@@ -13,13 +13,13 @@ Il gruppo è composto da due persone:
 - **Sviluppatore B:** realizza la sezione Dolci.
 - **Sviluppatore C:** realizza la sezione Bibite.
 
-## 2. Preparazione del repository da parte del PM
+## 2. Preparazione del repository da parte della persona che coordina
 
 1. Creare un repository GitHub pubblico chiamato `progetto-pizzeria`.
 2. Inserire i file iniziali `index.html` e `style.css`.
 3. Scrivere nel README lo scopo del progetto e le regole di collaborazione.
 4. Aprire **Settings → Collaborators** (o **Collaborators and teams**) e scegliere **Add people**.
-5. Cercare il nome utente GitHub di ciascuno dei tre sviluppatori e inviare l'invito.
+5. Cercare il nome utente GitHub di ciascuno dei un secondo partecipante e inviare l'invito.
 6. Ogni sviluppatore deve accettare l'invito ricevuto da GitHub.
 
 **Nota operativa:** gli inviti ai tre collaboratori vanno inviati dal proprietario del repository con il loro effettivo nome utente GitHub. Non sono stati inviati in questa esecuzione perché non erano disponibili i tre username e il collegamento GitHub utilizzato per il progetto non espone l'azione di amministrazione degli inviti.
@@ -35,11 +35,11 @@ cd progetto-pizzeria
 
 Il comando `clone` crea una copia locale del repository remoto.
 
-## 4. Creazione dei branch e lavoro separato
+## 4. Creazione dei branch e lavoro in coppia
 
-Ogni sviluppatore lavora nel proprio branch, senza modificare direttamente `main`.
+Le due persone lavorano su branch separati, senza modificare direttamente `main`. I branch possono essere organizzati per area funzionale. Per esempio, i branch `menuPizza`, `menuDolci` e `menuBibite` identificano le modifiche alle rispettive sezioni e non implicano la presenza di tre sviluppatori.
 
-**Sviluppatore A – Pizze**
+**Modifiche della sezione Pizze**
 
 ```bash
 git switch -c menuPizza
@@ -49,7 +49,7 @@ git commit -m "Aggiunge una nuova pizza al menu"
 git push -u origin menuPizza
 ```
 
-**Sviluppatore B – Dolci**
+**Modifiche della sezione Dolci**
 
 ```bash
 git switch -c menuDolci
@@ -59,7 +59,7 @@ git commit -m "Aggiunge un nuovo dolce al menu"
 git push -u origin menuDolci
 ```
 
-**Sviluppatore C – Bibite**
+**Modifiche della sezione Bibite**
 
 ```bash
 git switch -c menuBibite
@@ -146,9 +146,9 @@ Le seguenti attività sono visibili nella cronologia pubblica del repository:
 - Otto Pull Request (#1–#8) integrate in `main`.
 - Due branch concorrenti che hanno modificato la descrizione della Cola: dopo il merge della PR #7, GitHub ha rilevato il conflitto sulla PR #8. La risoluzione ha mantenuto la descrizione della Cola classica e aggiunto, separatamente, la disponibilità della variante senza zucchero. La PR #8 è stata quindi integrata.
 
-## 9. Attività da completare sui computer del gruppo
+## 9. Attività da completare sui computer dei due partecipanti
 
-Il repository remoto contiene il lavoro e la cronologia descritti sopra. Per rendere effettiva anche la parte distribuita su quattro computer, il PM deve ancora inviare gli inviti agli account reali dei tre sviluppatori e ognuno deve eseguire `git clone` e successivamente `git pull origin main` sul proprio computer. Queste operazioni locali non possono essere eseguite dal repository remoto.
+Il repository remoto contiene il lavoro e la cronologia descritti sopra. Per completare la parte distribuita, la persona che coordina deve ancora invitare il secondo partecipante usando il suo nome utente GitHub effettivo. La seconda persona dovrà accettare l'invito, eseguire `git clone` e, dopo i merge, `git pull origin main` sul proprio computer. Queste operazioni locali non possono essere eseguite dal repository remoto.
 
 ## 10. Funzioni GitHub citate nell'esercitazione
 
