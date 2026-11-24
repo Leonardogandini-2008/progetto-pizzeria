@@ -6,12 +6,9 @@ Repository remoto: https://github.com/Leonardogandini-2008/progetto-pizzeria
 
 ## 1. Ruoli del gruppo
 
-Il gruppo è composto da due persone:
+Il progetto è stato realizzato da **due partecipanti** che hanno collaborato alla progettazione e allo sviluppo. Le attività di coordinamento del repository, modifica dei file, creazione dei branch, Pull Request e integrazione sono attività del flusso di lavoro: non rappresentano quattro persone diverse.
 
-- **Project Manager (PM):** crea il repository, prepara il file iniziale, invita i collaboratori, controlla le Pull Request e integra le modifiche.
-- **Sviluppatore A:** realizza la sezione Pizze.
-- **Sviluppatore B:** realizza la sezione Dolci.
-- **Sviluppatore C:** realizza la sezione Bibite.
+Le sezioni Pizze, Dolci e Bibite sono aree funzionali del sito; non corrispondono a tre sviluppatori distinti.
 
 ## 2. Preparazione del repository da parte della persona che coordina
 
@@ -19,10 +16,10 @@ Il gruppo è composto da due persone:
 2. Inserire i file iniziali `index.html` e `style.css`.
 3. Scrivere nel README lo scopo del progetto e le regole di collaborazione.
 4. Aprire **Settings → Collaborators** (o **Collaborators and teams**) e scegliere **Add people**.
-5. Cercare il nome utente GitHub di ciascuno dei un secondo partecipante e inviare l'invito.
-6. Ogni sviluppatore deve accettare l'invito ricevuto da GitHub.
+5. Cercare il nome utente GitHub del secondo partecipante e inviare l'invito.
+6. Il secondo partecipante deve accettare l'invito ricevuto da GitHub.
 
-**Nota operativa:** gli inviti ai tre collaboratori vanno inviati dal proprietario del repository con il loro effettivo nome utente GitHub. Non sono stati inviati in questa esecuzione perché non erano disponibili i tre username e il collegamento GitHub utilizzato per il progetto non espone l'azione di amministrazione degli inviti.
+**Nota operativa:** l'invito al secondo partecipante deve essere inviato dal proprietario del repository utilizzando il suo effettivo nome utente GitHub. Non è stato inviato in questa esecuzione perché il nome utente del secondo partecipante non è stato fornito e il collegamento GitHub utilizzato per il progetto non espone l'azione di amministrazione degli inviti.
 
 ## 3. Clone del repository
 
@@ -39,7 +36,7 @@ Il comando `clone` crea una copia locale del repository remoto.
 
 Le due persone lavorano su branch separati, senza modificare direttamente `main`. I branch possono essere organizzati per area funzionale. Per esempio, i branch `menuPizza`, `menuDolci` e `menuBibite` identificano le modifiche alle rispettive sezioni e non implicano la presenza di tre sviluppatori.
 
-**Modifiche della sezione Pizze**
+**Esempio di modifica della sezione Pizze (eseguita da uno dei due partecipanti)**
 
 ```bash
 git switch -c menuPizza
@@ -49,7 +46,7 @@ git commit -m "Aggiunge una nuova pizza al menu"
 git push -u origin menuPizza
 ```
 
-**Modifiche della sezione Dolci**
+**Esempio di modifica della sezione Dolci (eseguita da uno dei due partecipanti)**
 
 ```bash
 git switch -c menuDolci
@@ -59,7 +56,7 @@ git commit -m "Aggiunge un nuovo dolce al menu"
 git push -u origin menuDolci
 ```
 
-**Modifiche della sezione Bibite**
+**Esempio di modifica della sezione Bibite (eseguita da uno dei due partecipanti)**
 
 ```bash
 git switch -c menuBibite
@@ -83,13 +80,13 @@ Dopo il push, lo sviluppatore apre GitHub e crea una Pull Request selezionando:
 - **base:** `main`
 - **compare:** il proprio branch.
 
-Il PM controlla il riepilogo e le differenze di codice, lascia eventuali commenti, richiede le correzioni necessarie e solo dopo approva e integra la modifica con **Merge pull request**.
+La persona che svolge il ruolo di revisione controlla il riepilogo e le differenze di codice, lascia eventuali commenti, richiede le correzioni necessarie e solo dopo approva e integra la modifica con **Merge pull request**. Nel lavoro in coppia, i ruoli operativi possono essere svolti dai due partecipanti.
 
 Se una correzione è richiesta, lo sviluppatore non deve aprire una nuova Pull Request: modifica ancora lo stesso branch, esegue un nuovo `git add`, `git commit` e `git push`. La Pull Request aperta si aggiorna automaticamente.
 
 ## 6. Aggiornamento delle copie locali dopo il merge
 
-Dopo che il PM ha integrato le Pull Request, ciascuno sviluppatore aggiorna la propria copia:
+Dopo che le Pull Request sono state integrate, entrambi i partecipanti aggiornano la propria copia:
 
 ```bash
 git switch main
@@ -148,7 +145,7 @@ Le seguenti attività sono visibili nella cronologia pubblica del repository:
 
 ## 9. Attività da completare sui computer dei due partecipanti
 
-Il repository remoto contiene il lavoro e la cronologia descritti sopra. Per completare la parte distribuita, la persona che coordina deve ancora invitare il secondo partecipante usando il suo nome utente GitHub effettivo. La seconda persona dovrà accettare l'invito, eseguire `git clone` e, dopo i merge, `git pull origin main` sul proprio computer. Queste operazioni locali non possono essere eseguite dal repository remoto.
+Il repository remoto contiene il lavoro e la cronologia descritti sopra. Per completare la parte distribuita, il proprietario deve ancora invitare il secondo partecipante usando il suo nome utente GitHub effettivo. Il secondo partecipante dovrà accettare l'invito, eseguire `git clone` e, dopo i merge, entrambi dovranno eseguire `git pull origin main` sui rispettivi computer. Queste operazioni locali non possono essere eseguite dal repository remoto.
 
 ## 10. Funzioni GitHub citate nell'esercitazione
 
